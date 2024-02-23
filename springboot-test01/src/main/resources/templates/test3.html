@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--  若要使用 Thymeleaf，需要在 html 文件中导入命名空间的约束，方便提示 -->
+<!-- 只有被接管了，才可以使用他的表达式 -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--th:each每次遍历都会生成当前这个标签：建议用行内写法 -->
+<h4 th:each="user :${users}" th:text="${user}"></h4>
+
+</body>

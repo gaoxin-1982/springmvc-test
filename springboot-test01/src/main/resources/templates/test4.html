@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--  若要使用 Thymeleaf，需要在 html 文件中导入命名空间的约束，方便提示 -->
+<!-- 只有被接管了，才可以使用他的表达式 -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>地址</td>
+    </tr>
+    <tr th:each="users : ${listUsers}" >
+        <td th:text="${users.name}"></td>
+        <td th:text="${users.age}"></td>
+        <td th:text="${users.addres}"></td>
+
+    </tr>
+</table>
+
+</body>
