@@ -7,4 +7,5 @@ package com.dcits;
 public class pojo {
     private String haha;
     private int age;
+    private  String addres;
 }
